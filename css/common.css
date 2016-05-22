@@ -1,0 +1,972 @@
+@charset "utf-8";
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    -webkit-tap-highlight-color: transparent
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    -webkit-touch-callout: none
+}
+
+a, h1, p, img, input, ul, li, button, dl, dd, dt, div {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    list-style: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    -webkit-user-select: none;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img, a {
+    display: block;
+    text-decoration: none;
+}
+
+/*/!*nav-part-start*!/*/
+/*.sport-nav {*/
+/*width: 100%;*/
+/*position: relative;*/
+/*padding-top: 12px;*/
+/*top: 0;*/
+/*min-width: 1200px;*/
+/*z-index: 2;*/
+/*}*/
+
+/*.sport-nav .nav-box {*/
+/*width: 100%;*/
+/*background: #5cbfeb;*/
+/*height: 50px;*/
+/*position: relative;*/
+/*}*/
+
+/*.sport-nav .nav-index {*/
+/*position: absolute;*/
+/*left: 0;*/
+/*top: 0;*/
+/*z-index: 1;*/
+/*width: 200px;*/
+/*}*/
+
+/*.sport-nav .nav-index div {*/
+/*height: 62px;*/
+/*background: #5cbfeb;*/
+/*text-align: right;*/
+/*margin-right: 36px;*/
+/*}*/
+
+/*.sport-nav .nav-index div a {*/
+/*padding: 15px 0 0 11px;*/
+/*width: 140px;*/
+/*height: 40px;*/
+/*}*/
+
+/*.sport-nav .nav-index span, .sport-nav .nav-dir1, .sport-nav .nav-dir2, .sport-nav .nav-box .prev-arrow, .sport-nav .right-icon-area .next-arrow, .sport-nav .right-icon-area .search-btn, .sport-nav .right-icon-area .nav-login, .sport-nav .right-icon-area .nav-link {*/
+/*background: url("../img/common_z.png") no-repeat;*/
+/*}*/
+
+/*.sport-nav .nav-index span {*/
+/*background-position: -84px -78px;*/
+/*position: absolute;*/
+/*right: 0;*/
+/*top: 0;*/
+/*width: 36px;*/
+/*height: 62px;*/
+/*}*/
+
+/*.sport-nav .nav-box .nav-item {*/
+/*display: inline-block;*/
+/*position: absolute;*/
+/*z-index: 2;*/
+/*}*/
+
+/*.sport-nav .nav-box .nav-item li {*/
+/*display: inline-block;*/
+/*height: 50px;*/
+/*line-height: 50px;*/
+/*/!*padding: 0 5px;*!/*/
+/*transition: all .3s linear;*/
+/*transform: scale(1);*/
+/*-webkit-transform: scale(1);*/
+/*opacity: 1;*/
+/*filter: alpha(opacity=100)*/
+/*}*/
+
+/*.sport-nav .nav-box .nav-item li a {*/
+/*color: #ffffff;*/
+/*font-size: 14px;*/
+/*display: block;*/
+/*padding: 0 5px;*/
+/*}*/
+
+/*.sport-nav .nav-box .item-three {*/
+/*left: -100%;*/
+/*margin-left: 47px;*/
+/*}*/
+
+/*.sport-nav .nav-box .item-left {*/
+/*right: 56%;*/
+/*margin-right: 47px;*/
+
+/*}*/
+
+/*.sport-nav .nav-box .item-right {*/
+/*left: 50%;*/
+/*margin-left: 47px;*/
+/*}*/
+
+/*.sport-nav .nav-dir1 {*/
+/*background-position: -156px -374px;*/
+/*width: 160px;*/
+/*height: 16px;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*left: 50%;*/
+/*margin-left: -80px;*/
+/*}*/
+
+/*.sport-nav .nav-dir2 {*/
+/*background-position: -10px 0;*/
+/*width: 120px;*/
+/*height: 64px;*/
+/*position: absolute;*/
+/*top: 0;*/
+/*left: 50%;*/
+/*margin-left: -60px;*/
+/*z-index: 1;*/
+/*}*/
+
+/*.sport-nav .right-icon-area {*/
+/*position: absolute;*/
+/*right: 0;*/
+/*top: 12px;*/
+/*width: 240px;*/
+/*height: 50px;*/
+/*font-size: 0;*/
+/*box-sizing: border-box;*/
+/*}*/
+
+/*.sport-nav .right-icon-area .next-arrow, .sport-nav .nav-box .prev-arrow {*/
+/*width: 16px;*/
+/*height: 14px;*/
+/*}*/
+
+/*.sport-nav .nav-box .prev-arrow {*/
+/*background-position: -330px -116px;*/
+/*position: absolute;*/
+/*top: 18px;*/
+/*left: 185px;*/
+/*z-index: 1;*/
+/*display: none;*/
+/*cursor: pointer;*/
+/*-webkit-transition: all 1s;*/
+/*-moz-transition: all 1s;*/
+/*-ms-transition: all 1s;*/
+/*-o-transition: all 1s;*/
+/*transition: all 1s;*/
+
+/*}*/
+
+/*.sport-nav .right-icon-area .next-arrow {*/
+/*background-position: -330px -138px;*/
+/*cursor: pointer;*/
+/*}*/
+
+/*.sport-nav .right-icon-area .next-arrow, .sport-nav .right-icon-area .search-btn, .sport-nav .right-icon-area .nav-login, .sport-nav .right-icon-area .nav-link {*/
+/*display: inline-block;*/
+/*vertical-align: middle;*/
+/*}*/
+
+/*.a {*/
+/*display: inline-block;*/
+/*width: 25%;*/
+/*text-align: center;*/
+/*}*/
+
+/*.sport-nav .right-icon-area .search-btn {*/
+/*background-position: -426px -264px;*/
+/*width: 20px;*/
+/*height: 20px;*/
+/*}*/
+
+/*.sport-nav .right-icon-area .nav-login {*/
+/*background-position: -300px -246px;*/
+/*width: 37px;*/
+/*height: 37px;*/
+/*}*/
+
+/*.sport-nav .right-icon-area .nav-link {*/
+/*background-position: -163px -66px;*/
+/*width: 60px;*/
+/*height: 50px;*/
+/*position: relative;*/
+/*}*/
+
+/*.sport-nav .right-icon-area .nav-link .hide-f {*/
+/*background: #FFFFFF;*/
+/*height: 44px;*/
+/*width: 100%;*/
+/*top: 50px;*/
+/*position: absolute;*/
+/*left: 0;*/
+/*display: none;*/
+/*}*/
+
+/*.sport-nav .right-icon-area .nav-link .hide-f li {*/
+/*display: inline-block;*/
+/*color: #000;*/
+/*font-size: 16px;*/
+/*}*/
+
+/*.sport-nav .nav-box .nav-item li {*/
+/*-webkit-transform: skew(-21deg);*/
+/*-moz-transform: skew(-21deg);*/
+/*-o-transform: skew(-21deg);*/
+/*background: transparent;*/
+/*}*/
+
+/*.sport-nav .nav-box .nav-item li a {*/
+/*-webkit-transform: skew(21deg);*/
+/*-moz-transform: skew(21deg);*/
+/*-o-transform: skew(21deg);*/
+/*}*/
+
+/*.sport-nav .nav-box .nav-item li.active {*/
+/*background: #000;*/
+/*}*/
+
+/*.sport-nav .nav-box .nav-item li.active2 a {*/
+/*border-bottom: 1px solid white;*/
+/*display: inline;*/
+/*}*/
+
+/*#sport-nav .small-nav {*/
+/*/!*display: none;*!/*/
+/*width: 100%;*/
+/*background: #37383c;*/
+/*height: 0;*/
+/*}*/
+
+/*#sport-nav .small-nav .small-nav-box {*/
+/*position: absolute;*/
+/*overflow: hidden;*/
+/*display: none;*/
+/*width: 100%;*/
+/*height: 44px;*/
+/*}*/
+
+/*#sport-nav .small-nav .small-nav-box li, #sport-nav .small-nav .small-nav-box a {*/
+/*line-height: 3.2em;*/
+/*color: #fff;*/
+/*font-size: 1em;*/
+/*text-decoration: none*/
+/*}*/
+
+/*#sport-nav .small-nav .small-nav-box li:hover, #sport-nav .small-nav .small-nav-box a:hover {*/
+/*color: #5cbfeb*/
+/*}*/
+
+/*#sport-nav .small-nav .small-nav-box li {*/
+/*float: left;*/
+/*cursor: pointer;*/
+/*padding: 0 .9em;*/
+/*font-size: .75em;*/
+/*line-height: 50px*/
+/*}*/
+/*/!*nav-part-end*!/*/
+/*/!*footer-start*!/*/
+/*#sport-footer {*/
+/*width: auto;*/
+/*min-width: 1200px;*/
+/*padding-bottom: 20px;*/
+/*background: #5cbfeb*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt a, #sport-footer .footer-top .flogo, #sport-footer .f-copyright .fc-logo {*/
+/*background: url("../img/common_z.png") no-repeat;*/
+/*}*/
+
+/*#sport-footer .inline, #sport-footer .footer-top .fbox dl dt a {*/
+/*display: inline-block;*/
+/**display: block;*/
+/**zoom: 1*/
+/*}*/
+
+/*#sport-footer .footer-wrapper {*/
+/*width: 1196px;*/
+/*height: 100%;*/
+/*margin: 0 auto*/
+/*}*/
+
+/*#sport-footer .footer-top {*/
+/*width: 100%;*/
+/*border-bottom: 1px solid #7bcaee;*/
+/*overflow: hidden;*/
+/*padding-bottom: 5px*/
+/*}*/
+
+/*#sport-footer .footer-top .flogo {*/
+/*float: left;*/
+/*width: 174px;*/
+/*height: 36px;*/
+/*margin-top: 24px;*/
+/*margin-left: 57px;*/
+/*background-position: 0 -333px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fline {*/
+/*float: left;*/
+/*margin: 6px 0 0 12px;*/
+/*height: 80px;*/
+/*width: 26px;*/
+/*border-left: 1px solid #7bcaee*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox {*/
+/*float: left;*/
+/*overflow: hidden;*/
+/*margin-top: 16px*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl.f-last {*/
+/*width: 82px*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl {*/
+/*width: 50px;*/
+/*float: left;*/
+/*margin-right: 6px;*/
+/*text-align: center*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt {*/
+/*display: inline-block;*/
+/*width: 40px*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo1 {*/
+/*background-position: -356px -283px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo2 {*/
+/*background-position: -356px -243px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo3 {*/
+/*background-position: -356px -203px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo4 {*/
+/*background-position: -356px -163px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo5 {*/
+/*background-position: -356px -123px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo6 {*/
+/*background-position: -356px -83px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo7 {*/
+/*background-position: -269px -333px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo8 {*/
+/*background-position: -406px -40px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo9 {*/
+/*background-position: -356px -43px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo10 {*/
+/*background-position: -359px -333px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo11 {*/
+/*background-position: -179px -333px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo12 {*/
+/*background-position: -406px 0;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo13 {*/
+/*background-position: -406px -80px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo14 {*/
+/*background-position: -314px -333px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt .teamlogo15 {*/
+/*background-position: -224px -333px;*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt a {*/
+/*width: 100%;*/
+/*height: 35px;*/
+/*display: inline-block*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dt a img {*/
+/*width: 100%*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dd {*/
+/*width: 100%;*/
+/*word-spacing: normal;*/
+/*overflow: hidden*/
+/*}*/
+
+/*#sport-footer .footer-top .fbox dl dd a {*/
+/*font-size: 12px;*/
+/*color: #fff;*/
+/*width: 100%;*/
+/*display: inline-block;*/
+/*text-align: center;*/
+/*text-decoration: none*/
+/*}*/
+
+/*#sport-footer .f-icp {*/
+/*margin-top: 22px;*/
+/*}*/
+
+/*#sport-footer .f-icp, #sport-footer .f-copyright {*/
+/*font-size: 12px;*/
+/*color: #fff;*/
+/*text-align: center;*/
+/*line-height: 22px*/
+/*}*/
+
+/*#sport-footer .f-icp a, #sport-footer .f-copyright a {*/
+/*text-decoration: none;*/
+/*color: #fff;*/
+/*font-size: 12px;*/
+/*margin-right: 4px;*/
+/*display: inline-block;*/
+/*}*/
+
+/*#sport-footer .f-copyright .fc-logo {*/
+/*display: inline-block;*/
+/*vertical-align: middle;*/
+/*width: 24px;*/
+/*height: 22px;*/
+/*margin-left: 10px;*/
+/*background-position: -406px -211px;*/
+/*}*/
+/*/!*footer-end*!/*/
+/*@media only screen and (min-width: 1850px) {*/
+/*.sport-nav .nav-box .nav-item li a {*/
+/*padding: 0 16px*/
+/*}*/
+/*}*/
+
+/*@media only screen and (max-width: 1850px) and (min-width: 1680px) {*/
+/*.sport-nav .nav-box .nav-item li a {*/
+/*padding: 0 11px*/
+/*}*/
+/*}*/
+
+/*@media only screen and (max-width: 1680px) and (min-width: 1367px) {*/
+/*.sport-nav .nav-box .nav-item li a {*/
+/*padding: 0 10px*/
+/*}*/
+/*}*/
+
+/*@media only screen and (max-width: 1366px) and (min-width: 1281px) {*/
+/*.sport-nav .nav-box .nav-item li a {*/
+/*padding: 0 5px*/
+/*}*/
+/*}*/
+
+/*@media only screen and (max-width: 1280px) and (min-width: 1201px) {*/
+/*#sport-nav .nav-box .nav-item li a {*/
+/*padding: 0 2px*/
+/*}*/
+/*}*/
+
+/*@media only screen and (max-width: 1200px) {*/
+/*#sport-nav .nav-box .nav-item li a {*/
+/*padding: 0*/
+/*}*/
+/*}*/
+
+/*nav-part-start*/
+.sport-nav {
+    width: 100%;
+    position: fixed;
+    padding-top: 12px;
+    top: 0;
+    min-width: 1200px;
+    z-index: 9999;
+}
+
+.sport-nav .nav-box {
+    width: 100%;
+    background: #5cbfeb;
+    height: 50px;
+    position: relative;
+}
+
+.sport-nav .nav-index {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 200px;
+}
+
+.sport-nav .nav-index div {
+    height: 62px;
+    background: #5cbfeb;
+    text-align: right;
+    margin-right: 36px;
+}
+
+.sport-nav .nav-index div a {
+    padding: 15px 0 0 11px;
+    width: 140px;
+    height: 40px;
+}
+
+.sport-nav .nav-index span, .sport-nav .nav-dir1, .sport-nav .nav-dir2, .sport-nav .nav-box .prev-arrow, .sport-nav .right-icon-area .next-arrow, .sport-nav .right-icon-area .search-btn, .sport-nav .right-icon-area .nav-login, .sport-nav .right-icon-area .nav-link {
+    background: url("../img/common_z.png") no-repeat;
+}
+
+.sport-nav .nav-index span {
+    background-position: -84px -78px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 36px;
+    height: 62px;
+}
+
+.sport-nav .nav-box .nav-item {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+}
+
+.sport-nav .nav-box .nav-item li {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    /*padding: 0 5px;*/
+    transition: all .3s linear;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    opacity: 1;
+    filter: alpha(opacity=100)
+}
+
+.sport-nav .nav-box .nav-item li a {
+    color: #ffffff;
+    font-size: 14px;
+    display: block;
+    padding: 0 5px;
+}
+
+.sport-nav .nav-box .item-three {
+    left: -100%;
+    margin-left: 47px;
+}
+
+.sport-nav .nav-box .item-left {
+    right: 56%;
+    margin-right: 47px;
+
+}
+
+.sport-nav .nav-box .item-right {
+    left: 50%;
+    margin-left: 47px;
+}
+
+.sport-nav .nav-dir1 {
+    background-position: -156px -374px;
+    width: 160px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.sport-nav .nav-dir2 {
+    background-position: -10px 0;
+    width: 120px;
+    height: 64px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -60px;
+    z-index: 1;
+}
+
+.sport-nav .right-icon-area {
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 240px;
+    height: 50px;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+.sport-nav .right-icon-area .next-arrow, .sport-nav .nav-box .prev-arrow {
+    width: 16px;
+    height: 14px;
+}
+
+.sport-nav .nav-box .prev-arrow {
+    background-position: -330px -116px;
+    position: absolute;
+    top: 18px;
+    left: 185px;
+    z-index: 1;
+    display: none;
+    cursor: pointer;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+
+}
+
+.sport-nav .right-icon-area .next-arrow {
+    background-position: -330px -138px;
+    cursor: pointer;
+}
+
+.sport-nav .right-icon-area .next-arrow, .sport-nav .right-icon-area .search-btn, .sport-nav .right-icon-area .nav-login, .sport-nav .right-icon-area .nav-link {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.a {
+    display: inline-block;
+    width: 25%;
+    text-align: center;
+}
+
+.sport-nav .right-icon-area .search-btn {
+    background-position: -426px -264px;
+    width: 20px;
+    height: 20px;
+}
+
+.sport-nav .right-icon-area .nav-login {
+    background-position: -300px -246px;
+    width: 37px;
+    height: 37px;
+}
+
+.sport-nav .right-icon-area .nav-link {
+    background-position: -163px -66px;
+    width: 60px;
+    height: 50px;
+}
+
+/*平行四边形*/
+.sport-nav .nav-box .nav-item li {
+    -webkit-transform: skew(-21deg);
+    -moz-transform: skew(-21deg);
+    -o-transform: skew(-21deg);
+    background: transparent;
+}
+
+.sport-nav .nav-box .nav-item li a {
+    -webkit-transform: skew(21deg);
+    -moz-transform: skew(21deg);
+    -o-transform: skew(21deg);
+}
+
+.sport-nav .nav-box .nav-item li.active {
+    background: #000;
+}
+
+.sport-nav .nav-box .nav-item li.active2 a {
+    border-bottom: 1px solid white;
+    display: inline;
+}
+
+#sport-nav .small-nav {
+    /*display: none;*/
+    position: relative;
+    top: 50px;
+    left: 0;
+    width: 100%;
+
+}
+
+#sport-nav .small-nav .small-nav-box {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    background: #37383c;
+    height: 0;
+
+}
+
+#sport-nav .small-nav .small-nav-box li, #sport-nav .small-nav .small-nav-box a {
+    line-height: 3.2em;
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none
+}
+
+#sport-nav .small-nav .small-nav-box li:hover, #sport-nav .small-nav .small-nav-box a:hover {
+    color: #5cbfeb
+}
+
+#sport-nav .small-nav .small-nav-box li {
+    float: left;
+    cursor: pointer;
+    padding: 0 .9em;
+    font-size: .75em;
+    line-height: 50px
+}
+
+/*nav-end*/
+/*footer-start*/
+#sport-footer {
+    width: auto;
+    min-width: 1200px;
+    padding-bottom: 20px;
+    background: #5cbfeb;
+    clear: both;
+}
+
+#sport-footer .footer-top .fbox dl dt a, #sport-footer .footer-top .flogo, #sport-footer .f-copyright .fc-logo {
+    background: url("../img/common_z.png") no-repeat;
+}
+
+#sport-footer .inline, #sport-footer .footer-top .fbox dl dt a {
+    display: inline-block;
+    *display: block;
+    *zoom: 1
+}
+
+#sport-footer .footer-wrapper {
+    width: 1196px;
+    height: 100%;
+    margin: 0 auto
+}
+
+#sport-footer .footer-top {
+    width: 100%;
+    border-bottom: 1px solid #7bcaee;
+    overflow: hidden;
+    padding-bottom: 5px
+}
+
+#sport-footer .footer-top .flogo {
+    float: left;
+    width: 174px;
+    height: 36px;
+    margin-top: 24px;
+    margin-left: 57px;
+    background-position: 0 -333px;
+}
+
+#sport-footer .footer-top .fline {
+    float: left;
+    margin: 6px 0 0 12px;
+    height: 80px;
+    width: 26px;
+    border-left: 1px solid #7bcaee
+}
+
+#sport-footer .footer-top .fbox {
+    float: left;
+    overflow: hidden;
+    margin-top: 16px
+}
+
+#sport-footer .footer-top .fbox dl.f-last {
+    width: 82px
+}
+
+#sport-footer .footer-top .fbox dl {
+    width: 50px;
+    float: left;
+    margin-right: 6px;
+    text-align: center
+}
+
+#sport-footer .footer-top .fbox dl dt {
+    display: inline-block;
+    width: 40px
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo1 {
+    background-position: -356px -283px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo2 {
+    background-position: -356px -243px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo3 {
+    background-position: -356px -203px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo4 {
+    background-position: -356px -163px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo5 {
+    background-position: -356px -123px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo6 {
+    background-position: -356px -83px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo7 {
+    background-position: -269px -333px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo8 {
+    background-position: -406px -40px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo9 {
+    background-position: -356px -43px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo10 {
+    background-position: -359px -333px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo11 {
+    background-position: -179px -333px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo12 {
+    background-position: -406px 0;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo13 {
+    background-position: -406px -80px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo14 {
+    background-position: -314px -333px;
+}
+
+#sport-footer .footer-top .fbox dl dt .teamlogo15 {
+    background-position: -224px -333px;
+}
+
+#sport-footer .footer-top .fbox dl dt a {
+    width: 100%;
+    height: 35px;
+    display: inline-block
+}
+
+#sport-footer .footer-top .fbox dl dt a img {
+    width: 100%
+}
+
+#sport-footer .footer-top .fbox dl dd {
+    width: 100%;
+    word-spacing: normal;
+    overflow: hidden
+}
+
+#sport-footer .footer-top .fbox dl dd a {
+    font-size: 12px;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none
+}
+
+#sport-footer .f-icp {
+    margin-top: 22px;
+}
+
+#sport-footer .f-icp, #sport-footer .f-copyright {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+    line-height: 22px
+}
+
+#sport-footer .f-icp a, #sport-footer .f-copyright a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 4px;
+    display: inline-block;
+}
+
+#sport-footer .f-copyright .fc-logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 22px;
+    margin-left: 10px;
+    background-position: -406px -211px;
+}
+
+/*footer-end*/
+@media only screen and (min-width: 1850px) {
+    .sport-nav .nav-box .nav-item li a {
+        padding: 0 16px
+    }
+}
+
+@media only screen and (max-width: 1850px) and (min-width: 1680px) {
+    .sport-nav .nav-box .nav-item li a {
+        padding: 0 11px
+    }
+}
+
+@media only screen and (max-width: 1680px) and (min-width: 1367px) {
+    .sport-nav .nav-box .nav-item li a {
+        padding: 0 10px
+    }
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 1281px) {
+    .sport-nav .nav-box .nav-item li a {
+        padding: 0 5px
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 1201px) {
+    #sport-nav .nav-box .nav-item li a {
+        padding: 0 2px
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #sport-nav .nav-box .nav-item li a {
+        padding: 0
+    }
+}
